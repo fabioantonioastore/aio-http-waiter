@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "aio-http-waiter"
-version = "0.0.4"
+version = "0.1.0"
 description = "Python HTTP Waiter"
 readme = "README.md"
 requires-python = ">=3.14"
