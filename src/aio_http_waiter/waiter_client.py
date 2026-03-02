@@ -8,7 +8,7 @@ import aiohttp_retry
 RETRY_STATUS_CODE = {408, 429, 503, 504}
 
 
-class Client:
+class WaiterClient:
     def __init__(
         self,
         base_url: str | None = None,
