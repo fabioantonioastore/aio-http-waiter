@@ -1,0 +1,24 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "aio-http-waiter"
+version = "0.0.1"
+description = "Python HTTP Waiter"
+readme = "README.md"
+requires-python = ">=3.14"
+license = "MIT"
+authors = [
+  { name = "Fabio Antonio Astore", email = "astore.a.fabio@gmail.com" },
+]
+dependencies = [
+    "aiohttp[speedups] == 3.13.3",
+    "aiohttp-retry == 2.9.1"
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/http_waiter"]
+
+[tool.hatch.build.targets.sdist]
+packages = ["src/http_waiter"]
